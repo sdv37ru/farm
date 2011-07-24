@@ -150,6 +150,7 @@ package
 		}
 		
 		internal function renderBG(imageurl:String):void{
+			
 			var img:Bitmap = new Bitmap;
 			var url:URLRequest = new URLRequest(imageurl);
 			var loader:Loader = new Loader();
