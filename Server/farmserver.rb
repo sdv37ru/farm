@@ -118,6 +118,8 @@
           plant = PlantInBase.new(row['id'], row['x'], row['y'], row['state'], row['planttype'])
           plantsinbase << plant
       end
+	#так не делать
+
 
       response['Content-Type'] = 'text/html'
       xml = Builder::XmlMarkup.new(:indent => 2)
