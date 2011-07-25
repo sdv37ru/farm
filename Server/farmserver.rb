@@ -94,6 +94,7 @@
           #
       end
 
+	#так не делать
       def insertplant(conn,plantin)
         res = conn.exec('INSERT INTO "Field"(id, x, y, state, planttype) VALUES ('+plantin.id+', '+plantin.x+', '+plantin.y+', '+plantin.state.to_s+', \''+plantin.planttype+'\');')
       end
